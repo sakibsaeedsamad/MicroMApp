@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do you want to approve this transaction?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        app:backgroundTint="#009688"
+        android:layout_margin="10dp"
+        />
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvAmountDialog"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Amount: "-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+<!--        android:textColor="#000000"-->
+<!--        app:backgroundTint="#009688"-->
+<!--        android:layout_margin="10dp"-->
+<!--        />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvIdDialog"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Id: "-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+<!--        android:textColor="#000000"-->
+<!--        app:backgroundTint="#009688"-->
+<!--        android:layout_margin="10dp"-->
+<!--        />-->
+<!--    <TextView-->
+<!--        android:id="@+id/tvRemarksDialog"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Remarks: "-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+<!--        android:textColor="#000000"-->
+<!--        app:backgroundTint="#009688"-->
+<!--        android:layout_margin="10dp"-->
+<!--        />-->
+
+    <Button
+        android:id="@+id/btnApproveDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        app:backgroundTint="#009688" />
+
+
+
+
+</LinearLayout>
