@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
     <TextView
         android:layout_width="match_parent"
@@ -15,37 +16,40 @@
         android:layout_margin="10dp"
         />
 
-<!--    <TextView-->
-<!--        android:id="@+id/tvAmountDialog"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Amount: "-->
-<!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
-<!--        android:textColor="#000000"-->
-<!--        app:backgroundTint="#009688"-->
-<!--        android:layout_margin="10dp"-->
-<!--        />-->
 
-<!--    <TextView-->
-<!--        android:id="@+id/tvIdDialog"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Id: "-->
-<!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
-<!--        android:textColor="#000000"-->
-<!--        app:backgroundTint="#009688"-->
-<!--        android:layout_margin="10dp"-->
-<!--        />-->
-<!--    <TextView-->
-<!--        android:id="@+id/tvRemarksDialog"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Remarks: "-->
-<!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
-<!--        android:textColor="#000000"-->
-<!--        app:backgroundTint="#009688"-->
-<!--        android:layout_margin="10dp"-->
-<!--        />-->
+
+    <TextView
+        android:id="@+id/tvIdDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Id: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        app:backgroundTint="#009688"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvAmountDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Amount: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        app:backgroundTint="#009688"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvRemarksDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remarks: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        app:backgroundTint="#009688"
+        android:layout_margin="10dp"
+        />
 
     <Button
         android:id="@+id/btnApproveDialog"
@@ -54,7 +58,17 @@
         android:text="Yes"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#000000"
-        app:backgroundTint="#009688" />
+        app:backgroundTint="#009688"
+        android:layout_margin="10dp"/>
+    <Button
+        android:id="@+id/btnNO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        app:backgroundTint="#009688"
+        android:layout_margin="10dp"/>
 
 
 

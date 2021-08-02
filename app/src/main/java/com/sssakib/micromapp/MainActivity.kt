@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -25,6 +26,8 @@ class MainActivity : AppCompatActivity(), PendingListAdapter.OnRowClickListener 
     private val pendingListAdapter = PendingListAdapter(arrayListOf(), this@MainActivity)
 
     lateinit var id: String
+    lateinit var amount: String
+    lateinit var remarks: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -121,13 +124,21 @@ class MainActivity : AppCompatActivity(), PendingListAdapter.OnRowClickListener 
 
     override fun onClick(accountModel: AccountModel) {
 
+
+
         val dialog = MaterialDialog(this)
             .noAutoDismiss()
             .customView(R.layout.main_dialog)
 
         id = accountModel.id.toString()
-        val amount = accountModel.amount.toString()
-        val remarks = accountModel.remarks.toString()
+        amount = accountModel.amount.toString()
+        remarks = accountModel.remarks.toString()
+
+        dialog.tvIdDialog.text= "Id: " + id
+        dialog.tvAmountDialog.text = "Amount: " + amount
+        dialog.tvRemarksDialog.text = "Remarks: " + remarks
+
+
 
         dialog.btnApproveDialog.setOnClickListener {
 
@@ -135,6 +146,10 @@ class MainActivity : AppCompatActivity(), PendingListAdapter.OnRowClickListener 
             doGetAllPendingTransaction()
             dialog.dismiss()
 
+        }
+
+        dialog.btnNO.setOnClickListener {
+            dialog.dismiss()
         }
 
         dialog.show()
